@@ -1,0 +1,146 @@
+
+@import url('https://fonts.google.com/specimen/Red+Hat+Display');
+
+
+
+// Colors
+
+// ### Primary
+
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+
+// ### Neutral
+
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+
+*{
+    box-sizing: border-box;
+    // font-family: specimen;
+
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    background: url('../images/pattern-background-desktop.svg') no-repeat , $Pale-blue;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(197, 197, 223, 0.671);
+    &>div{
+        background-color: white;
+        margin: 20px;
+        text-align: center;
+        &>h1{
+            font-weight: 900;
+            color: $Dark-blue;
+        }
+        &>p{
+            margin: auto 30px;
+            color: $Desaturated-blue;
+            font-size: 16px;
+            line-height: 25px;
+            // margin: auto 20px ;
+        }
+        .plan{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            background-color: $Very-pale-blue;
+            padding:  5px 20px;
+            border-radius: 15px;
+            margin: 20px auto;
+            
+            &>img{
+                width: 50px;
+                height: 50px;
+
+            }
+            &>p{
+                padding-left: 20px;
+                color: $Desaturated-blue;
+                text-align: left;
+                flex: 40%;
+                line-height: 25px;
+                span{
+                    color: $Dark-blue;
+                    font-weight: 700;
+                }
+                small{
+                    font-weight: 700;
+                }
+            }
+            &>a{
+                text-align: right;
+                color: $Bright-blue;
+                font-weight: 700;
+                // background-color: red;
+                // display: block;
+                &:hover{
+                    opacity: .7;
+                }
+                &:active{
+                    transform: scale(.98);
+                }
+            }
+        }
+        &>button{
+            border: none;
+            cursor: pointer;
+            display: block;
+            font-size: large;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-weight: 700;
+            border-radius: 10px;
+            width: 80%;
+            &:active{
+                transform: scale(0.98);
+            }
+            // transition: 0.5s ease background-color,0.5s ease  color;
+        }
+        .proceed{
+            background-color: $Bright-blue;
+            color: white;
+            box-shadow: 0 10px 15px rgba(0, 0, 255, 0.192);
+            &:hover{
+                background-color: hsl(245, 83%, 68%);
+            }
+            
+        }
+        .cancel{
+            background-color: transparent;
+            color: $Desaturated-blue;
+            &:hover{
+                color: $Dark-blue;
+            }
+        }
+    }
+}
+
+.attribution{
+    position: fixed;
+    bottom: 20px;
+}
+@media screen and (min-width: 375px) {
+    .card{
+        max-width: 400px;
+    }   
+}
