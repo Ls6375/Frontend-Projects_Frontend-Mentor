@@ -1,0 +1,117 @@
+
+// ## Colors
+
+// ### Primary
+
+$bright-orange: hsl(31, 77%, 52%)
+$dark-cyan: hsl(184, 100%, 22%)
+$very-dark-cyan: hsl(179, 100%, 13%)
+
+// ### Neutral
+
+$paragraphs: hsla(0, 0%, 100%, 0.75)
+$background-headings-buttons: hsl(0, 0%, 95%)
+
+// - Weights: 700
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap')
+
+// font-family: 'Big Shoulders Display', cursive;
+// font-family: 'Lexend Deca', sans-serif;
+*
+    box-sizing: border-box
+
+body
+    display: flex
+    justify-content: center
+    align-content: center
+    flex-direction: column
+    min-width: 100vw
+    min-height: 100vh
+    overflow-x: hidden
+    background-color: $background-headings-buttons
+
+.card
+    display: flex
+    flex-direction: column
+    width: 80%
+    max-width: 400px
+    border-radius: 10px
+    overflow: hidden
+    margin: 50px auto
+
+    div
+
+        display: flex
+        flex-direction: column
+        padding: 50px
+        &:nth-child(1)
+            background-color: $bright-orange
+            button
+                color: $bright-orange
+
+        &:nth-child(2)
+            background-color: $dark-cyan
+            button
+                color: $dark-cyan
+        &:nth-child(3)
+            background-color: $very-dark-cyan
+            button
+                color: $very-dark-cyan
+        img
+            width: 60px
+        .heading
+            font-family: 'Big Shoulders Display', cursive
+            font-size: 2.5rem
+            color: $background-headings-buttons
+            text-transform: uppercase
+            margin-bottom: 1rem
+        p
+            line-height: 1.7
+            color: $paragraphs
+            font-family: 'Lexend Deca', sans-serif
+            letter-spacing: 1px
+        button
+            border: none
+            background-color: $background-headings-buttons
+            border-radius: 20px
+            padding: 10px 20px
+            width: 150px
+            text-align: center
+            font-size: 1rem
+            letter-spacing: 1px
+            font-family: 'Lexend Deca', sans-serif
+            cursor: pointer
+            border: 3px solid  $background-headings-buttons
+            margin-top: 20px
+            &:hover
+                background-color: transparent
+                color: $background-headings-buttons
+            &:active
+                transform: scale(.98)
+
+
+@media screen and (min-width:1000px) 
+    .card
+        flex-direction: row
+        max-width: 950px
+        >div
+            width: 33.33%
+            .heading
+                font-size: 2rem
+            p,button
+                font-size: 0.8rem
+            button
+                margin-top: 50px
+                
+
+.attribution 
+    font-family: 'Lexend Deca', sans-serif
+    font-size: 11px
+    text-align: center
+    a  
+        text-decoration: none
+        font-family: 'Lexend Deca', sans-serif
+        font-weight: 700
+
+        &:hover
+            text-decoration: underline
