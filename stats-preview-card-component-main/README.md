@@ -7,8 +7,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ## Links ! 👋
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- <a href="https://ls6375.github.io/Frontend-Projects_Frontend-Mentor/stats-preview-card-component-main/    " target="_blank">Live Site URL</a>
+- <a href="https://www.frontendmentor.io/solutions/stats-preview-card-component-with-flex-lMkxZo7ph" target="_blank">Solution URL</a>
 
 
 ## Built with
