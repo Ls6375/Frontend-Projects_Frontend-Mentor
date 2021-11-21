@@ -1,5 +1,7 @@
 *
     box-sizing: border-box
+    marign: 0
+    padding: 0
 
 $blue: hsl(215, 51%, 70%)
 $cyan: hsl(178, 100%, 50%)
@@ -15,23 +17,21 @@ p
     font-size: 18px
 
 body
-    min-height: 100vh
-    overflow-x: hidden
-    min-width: 100vw
+
     display: flex
+    row-gap: 20px
     flex-direction: column
     justify-content: center
     align-items: center
     background-color: $main-BG
     font-family: 'Outfit', sans-serif
+    padding: 10vh 5vw
 
 .card
     background-color: $card-BG
     padding: 28px
     border-radius: 20px
     max-width: 425px
-    width: 80%
-    margin: auto
     .img
         position: relative
         border-radius: 20px
@@ -142,7 +142,13 @@ body
         text-decoration: none
         &:hover
             text-decoration: underline
-@media screen and ( min-width: 400px  )
+
+@media screen and ( min-width: 600px  )
     body
-        overflow: hidden
+        height: 100vh
+        row-gap: 4rem
+
+    
+    
+
     
