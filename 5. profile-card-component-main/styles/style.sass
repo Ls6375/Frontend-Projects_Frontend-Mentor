@@ -1,0 +1,46 @@
+*
+    box-sizing: border-box
+
+
+
+$Dark-cyan: hsl(185, 75%, 39%)
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%)
+$Dark-grayish-blue: hsl(227, 10%, 46%)
+
+
+$Dark-gray: hsl(0, 0%, 59%)
+
+body
+    font-family: 'Kumbh Sans', sans-serif
+    background-image: url(../images/bg-pattern-top.svg),url(../images/bg-pattern-bottom.svg)
+    background-color: $Dark-cyan
+    background-repeat: no-repeat,no-repeat
+    min-width: 100vw
+    min-height: 100vh
+    background-size: cover
+    background-origin: content-box
+    margin: 0
+    background-position: left -80vw top -60vh,right  -80vw top 50vh
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.card
+    border-radius: 15px
+    background-color: red
+    text-align: center
+    overflow: hidden
+    // min-width: 400px
+    width: 60%
+    margin: auto
+
+    display: block
+    img
+        width: 250px
+        display: block
+        padding: -20px
+        border-radius: 100%
+        border: solid white 6px
+ 
