@@ -1,22 +1,20 @@
 
-# Frontend Mentor - Order summary card solution
-
+# Frontend Mentor - Profile card component solution
 ![](./design/screenshot.jpeg)
+This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-
-This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Links ! 👋
 
-- [Live Site URL](https://ls6375.github.io/Frontend-Projects_Frontend-Mentor/)
-- [Solution URL](https://www.frontendmentor.io/solutions/)
+- [Live Site URL](https://ls6375.github.io/Frontend-Projects_Frontend-Mentor/5.%20profile-card-component-main)
+- [Solution URL](https://www.frontendmentor.io/solutions/5.%20profile-card-component-main)
 
 
 ## Built with
 
 - HTML5 markup
 - CSS custom properties
-- Scss
+- Sass
 
 
 ## Author
