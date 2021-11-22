@@ -7,7 +7,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ## Links ! 👋
 
 - [Live Site URL](https://ls6375.github.io/Frontend-Projects_Frontend-Mentor/5.%20profile-card-component-main)
-- [Solution URL](https://www.frontendmentor.io/solutions/5.%20profile-card-component-main)
+- [Solution URL](https://www.frontendmentor.io/solutions/profile-card-component-ycMBQqRq0)
 
 
 ## Built with
