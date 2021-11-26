@@ -8,7 +8,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 ## Links ! 👋
 
 - [Live Site URL](https://ls6375.github.io/Frontend-Projects_Frontend-Mentor/7.%20social-proof-section-master)
-- [Solution URL](https://www.frontendmentor.io/solutions/)
+- [Solution URL](https://www.frontendmentor.io/solutions/social-proof-section-eM_t08Ag0)
 
 
 ## Built with
