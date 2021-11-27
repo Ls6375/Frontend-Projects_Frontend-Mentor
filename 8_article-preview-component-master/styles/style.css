@@ -1,0 +1,312 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #6d7f97;
+  margin: 10px auto;
+}
+
+.attribution a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #48556a;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 13px;
+  background-color: #ecf2f8;
+}
+
+.card {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.card .img {
+  overflow: hidden;
+}
+
+.card .img img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom -200px center;
+     object-position: bottom -200px center;
+}
+
+.card .bottom {
+  padding: 20px 0 0 0;
+  margin: auto;
+}
+
+.card .bottom .text, .card .bottom .profile {
+  padding: 0 20px;
+}
+
+.card .bottom .text h1, .card .bottom .profile h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #48556a;
+}
+
+.card .bottom .text p, .card .bottom .profile p {
+  line-height: 1.5;
+  color: #6d7f97;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.card .bottom .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.card .bottom .profile.active {
+  background-color: #48556a;
+}
+
+.card .bottom .profile.active .info p, .card .bottom .profile.active .info img {
+  display: none;
+}
+
+.card .bottom .profile.active .info .share-active {
+  display: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 5px;
+  color: #9eafc2;
+}
+
+.card .bottom .profile.active .info .share-active img {
+  display: block;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.card .bottom .profile.active button {
+  background-color: #6d7f97;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .bottom .profile.active button svg > path {
+  fill: white;
+}
+
+.card .bottom .profile .info {
+  min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+}
+
+.card .bottom .profile .info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+}
+
+.card .bottom .profile .info p {
+  color: #48556a;
+  font-weight: 700;
+}
+
+.card .bottom .profile .info .share-active {
+  display: none;
+}
+
+.card .bottom .profile .info span {
+  color: #6d7f97;
+  font-weight: 500;
+}
+
+.card .bottom .profile button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s background-color ease;
+  transition: 0.3s background-color ease;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  display: block;
+  width: 35px;
+  height: 35px;
+}
+
+.card .bottom .profile button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+@media screen and (min-width: 920px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 800px;
+    width: 90%;
+    overflow: initial;
+    margin: auto;
+  }
+  .card .img {
+    overflow: hidden;
+    min-width: 40%;
+    border-radius: 15px  0  0 15px;
+  }
+  .card .img img {
+    height: 120%;
+    -o-object-position: left center;
+       object-position: left center;
+  }
+  .card .bottom .text, .card .bottom .profile {
+    padding: 0 30px;
+  }
+  .card .bottom .profile {
+    position: relative;
+  }
+  .card .bottom .profile.active {
+    background-color: transparent;
+  }
+  .card .bottom .profile.active .info {
+    position: relative;
+  }
+  .card .bottom .profile.active .info p, .card .bottom .profile.active .info img {
+    display: initial;
+  }
+  .card .bottom .profile.active .info .share-active {
+    background-color: #48556a;
+    padding: 5px 20px;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    position: absolute;
+    right: -161%;
+    top: -80%;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: 5px;
+    color: #9eafc2;
+    -webkit-animation: mymove 0.3s;
+            animation: mymove 0.3s;
+  }
+  @-webkit-keyframes mymove {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes mymove {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  .card .bottom .profile.active .info .share-active::before {
+    content: " ";
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #48556a transparent transparent transparent;
+  }
+  .card .bottom .profile.active .info .share-active img {
+    display: block;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
+}
+/*# sourceMappingURL=style.css.map */
