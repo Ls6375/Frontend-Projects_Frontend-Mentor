@@ -7,7 +7,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 ## Links ! 👋
 
 - [Live Site URL](https://ls6375.github.io/Frontend-Projects_Frontend-Mentor/9_four-card-feature-section-master)
-- [Solution URL](https://www.frontendmentor.io/solutions/)
+- [Solution URL](https://www.frontendmentor.io/solutions/four-card-feature-nLmEajNOD)
 
 
 ## Built with
