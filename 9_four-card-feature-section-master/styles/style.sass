@@ -1,0 +1,123 @@
+*
+    box-sizing: border-box
+
+$Very-Dark-Blue: hsl(234, 12%, 34%)
+$Grayish-Blue: hsl(229, 6%, 66%)
+$Very-Light-Gray: hsl(0, 0%, 98%)
+
+$Cyan: hsl(180, 62%, 55%)
+$Orange: hsl(34, 97%, 64%)
+$Blue: hsl(212, 86%, 64%)
+$Red: hsl(0, 78%, 62%)
+
+
+
+.attribution 
+    margin: 10px auto 
+    font-size: 11px
+    text-align: center
+    color: $Grayish-Blue
+    letter-spacing: 1px
+    a  
+        text-decoration: none
+        font-weight: 700
+        color: $Very-Dark-Blue
+        &:hover
+            text-decoration: underline
+
+body 
+    margin: 0
+    font-size: 15px
+    font-family: 'Poppins', sans-serif
+
+main
+    width: 90%
+    margin: auto
+    margin-top: 80px
+    max-width: 400px
+
+
+.heading
+    h1
+        font-weight: 200
+        color: $Very-Dark-Blue
+        text-align: center
+        font-size: 1.5rem
+        span
+            font-weight: 600
+    p
+        width: 80%
+        max-width: 500px
+        text-align: center
+        font-weight: 400
+        margin: auto
+        color: $Grayish-Blue
+
+.cards-container
+    width: 90%
+    margin: auto
+    >div
+        .card
+            padding: 10px 25px
+            widows: 80%
+            margin: auto
+            // background-color: red
+            border-radius: 5px
+            border-top-style: solid
+            border-top-width: 5px
+            margin: 20px 0
+            box-shadow: 0 5px 20px #c0d1e9
+            .title
+                font-size: 1.2rem
+                font-weight: 600
+                color: $Very-Dark-Blue
+                margin-bottom: 0
+            p
+                font-weight: 200
+                font-size: 0.850rem
+                color: $Grayish-Blue
+            img
+                display: block
+                margin: auto
+                margin-right: 0
+
+.red
+    border-color: $Red
+.orange
+    border-color: $Orange
+.blue
+    border-color: $Blue
+.cyan
+    border-color: $Cyan
+
+@media screen and ( min-width: 950px  )
+    
+
+    html, body 
+        height: 100%
+    
+
+    html 
+        display: table
+        margin: auto
+    
+
+    body 
+        display: table-cell
+        vertical-align: middle
+    
+    .heading h1
+        font-size: 2rem
+
+    main
+        margin-top: initial
+        max-width: 1200px
+        .cards-container
+            display: flex
+            justify-content: center
+            align-items: center
+            column-gap: 30px
+
+            >div
+                width: 32%
+            

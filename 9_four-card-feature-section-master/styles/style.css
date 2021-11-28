@@ -1,0 +1,145 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.attribution {
+  margin: 10px auto;
+  font-size: 11px;
+  text-align: center;
+  color: #a3a5ae;
+  letter-spacing: 1px;
+}
+
+.attribution a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #4c4e61;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  margin-top: 80px;
+  max-width: 400px;
+}
+
+.heading h1 {
+  font-weight: 200;
+  color: #4c4e61;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.heading h1 span {
+  font-weight: 600;
+}
+
+.heading p {
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  font-weight: 400;
+  margin: auto;
+  color: #a3a5ae;
+}
+
+.cards-container {
+  width: 90%;
+  margin: auto;
+}
+
+.cards-container > div .card {
+  padding: 10px 25px;
+  widows: 80%;
+  margin: auto;
+  border-radius: 5px;
+  border-top-style: solid;
+  border-top-width: 5px;
+  margin: 20px 0;
+  -webkit-box-shadow: 0 5px 20px #c0d1e9;
+          box-shadow: 0 5px 20px #c0d1e9;
+}
+
+.cards-container > div .card .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4c4e61;
+  margin-bottom: 0;
+}
+
+.cards-container > div .card p {
+  font-weight: 200;
+  font-size: 0.850rem;
+  color: #a3a5ae;
+}
+
+.cards-container > div .card img {
+  display: block;
+  margin: auto;
+  margin-right: 0;
+}
+
+.red {
+  border-color: #ea5353;
+}
+
+.orange {
+  border-color: #fcaf4a;
+}
+
+.blue {
+  border-color: #549ef2;
+}
+
+.cyan {
+  border-color: #45d3d3;
+}
+
+@media screen and (min-width: 950px) {
+  html, body {
+    height: 100%;
+  }
+  html {
+    display: table;
+    margin: auto;
+  }
+  body {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .heading h1 {
+    font-size: 2rem;
+  }
+  main {
+    margin-top: initial;
+    max-width: 1200px;
+  }
+  main .cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  main .cards-container > div {
+    width: 32%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
